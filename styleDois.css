@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    
+    background-image: url("1012284.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+  /* menu */
+.menu {
+    background: #0f0f0f;
+    color: white;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+/* Lado esquerdo */
+.menu-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Botão hamburguer */
+.hamburguer {
+    width: 25px;
+    cursor: pointer;
+}
+
+.hamburguer span {
+    display: block;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.hamburguer:hover span {
+    background: #00ffff;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+}
+
+/* Lista */
+.menu-lista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    transition: 0.4s;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-lista a:hover {
+    color: #00ffff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .menu-lista {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        flex-direction: column;
+        background: #111;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .menu-lista.ativo {
+        left: 0;
+    }
+}
+
+.Quadro1{
+
+  /*  background-color: #0f0f0f;
+    color:#f1f1f1;
+    max-width:1500px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 200px;
+    border-radius: 8px;
+*/
+}
+
+.gif{
+    
+    background-image: url("223513.gif");
+    background-size: cover;
+    background-position: center;
+
+    width: 500px;
+    height: 500px; /* ⚠️ PRECISA TER ALTURA */
+
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+
+}
+
+.Quadro1 p{
+
+   font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+
+}
+
+
+
+
+
+/* final  do menu*/
+.menuEnd {
+    background-color: black;
+    color: #f1f1f1;
+    text-align: left;
+    padding: 20px;
+    margin-top: auto;
+}

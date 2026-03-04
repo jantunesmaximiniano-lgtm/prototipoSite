@@ -1,0 +1,55 @@
+<!DOCTYPE  html>
+<html lang="pt-Br">
+    <head>
+    <meta charset="UTF-8">
+    <title>Fábrica de Código</title>
+    <link rel="stylesheet" href="styleDois.css">
+    </head>
+    <body>
+            <!-- Menu -->
+     <header class="menu">
+
+    <div class="menu-esquerda">
+        <div class="hamburguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+         <h1 class="logo">Mundo do Código</h1>
+
+    </div>
+            <!-- meu-lista -->
+    <nav>
+        <ul class="menu-lista" id="menuLista">
+            <li><a href="HtmlProtodipo.html">Início</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Linguagens</a></li>  
+        </ul>
+    </nav>
+
+</header>
+
+         <main class="Quadro1">
+            <div class="gif">
+
+            </div>
+        </main>         
+
+    </body>
+        <!--Final do menu-->
+      <footer class="menuEnd">
+        <p>Contato: janunesmaximiliano@gmail.com</p>
+        <p>Telefone: (92) 99509-1366</p>
+        <p>Endereço: Manaus - AM</p>
+        <p>© 2026 Todos os direitos reservados</p>
+    </footer>
+
+      <script>
+    function toggleMenu() {
+    const menu = document.getElementById("menuLista");
+    menu.classList.toggle("ativo");
+}
+</script>
+
+    </html>
